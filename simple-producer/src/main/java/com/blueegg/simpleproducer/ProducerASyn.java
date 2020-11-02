@@ -14,7 +14,7 @@ public class ProducerASyn {
         String topicName = "hello-kafka";
 
         Properties props = new Properties();
-        props.put("bootstrap.servers", "hadoop001:9092");
+        props.put("bootstrap.servers", "host1:9092");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         /*创建生产者*/
